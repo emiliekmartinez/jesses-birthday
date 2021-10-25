@@ -1,0 +1,38 @@
+{
+  "extends": [
+    "tslint:recommended",
+    "tslint-react",
+    "tslint-react-a11y",
+    "tslint-config-prettier"
+  ],
+  "rulesDirectory": ["tslint-plugin-prettier"],
+  "rules": {
+      "interface-name": false,
+
+      "jsx-boolean-value": false,
+      "jsx-no-lambda": false,
+
+      "new-parens": true,
+      "no-arg": true,
+      "no-bitwise": true,
+      "no-conditional-assignment": true,
+      "no-consecutive-blank-lines": false,
+      "no-console": {
+          "severity": "warn",
+          "options": ["debug", "info", "log", "time", "timeEnd", "trace"]
+      },
+      "object-literal-sort-keys": false,
+      "ordered-imports": false,
+
+      "react-a11y-anchors": false,
+
+      "prettier": {
+        "severity": "error"
+      }
+  },
+  "linterOptions": {
+    "exclude": [
+      "**/*.jsx"
+    ]
+  }
+}
