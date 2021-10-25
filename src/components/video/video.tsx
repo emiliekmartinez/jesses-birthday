@@ -1,7 +1,7 @@
 /** @jsx jsx */
-import { jsx } from '@emotion/core';
+import { jsx } from '@emotion/react';
+
 import { FC } from 'react';
-import { graphql } from 'gatsby';
 import ReactPlayer from 'react-player';
 
 import { Box, Flex, Heading } from 'rebass';

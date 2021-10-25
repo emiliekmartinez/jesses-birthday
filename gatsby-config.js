@@ -10,19 +10,7 @@ module.exports = {
   },
   plugins: [
     `gatsby-plugin-sitemap`,
-    {
-      resolve: `gatsby-plugin-sass`,
-      options: {
-        cssLoaderOptions: {
-          esModule: false,
-            modules: {
-            namedExport: false,
-          },
-        },
-      },
-    },
     `gatsby-plugin-remove-trailing-slashes`,
-    `gatsby-plugin-robots-txt`,
     `gatsby-plugin-typescript`,
     `gatsby-plugin-theme-ui`,
     `gatsby-plugin-react-helmet`,
@@ -30,10 +18,8 @@ module.exports = {
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-remove-fingerprints`,
-    `gatsby-plugin-netlify`,
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
-    `gatsby-plugin-catch-links`,
     `gatsby-plugin-gatsby-cloud`,
     {
       resolve: `gatsby-source-contentful`,

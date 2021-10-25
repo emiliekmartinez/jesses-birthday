@@ -2,13 +2,9 @@
 
 import React from 'react';
 import { Helmet } from 'react-helmet';
-import { ThemeProvider } from 'emotion-theming';
+import { useTheme, ThemeProvider, withTheme } from '@emotion/react'
 import { jsx, Themed } from 'theme-ui';
 import Theme from '../gatsby-plugin-theme-ui/index';
-
-import './layout.scss';
-
-import '../global.scss';
 
 // @ts-ignore
 import favicon from '../assets/logos/favicon.png';

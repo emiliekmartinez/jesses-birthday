@@ -1,5 +1,4 @@
 /** @jsx jsx */
-import { css } from '@emotion/core';
 import { FC } from 'react';
 import { graphql } from 'gatsby';
 import { Box, Link } from 'rebass';
