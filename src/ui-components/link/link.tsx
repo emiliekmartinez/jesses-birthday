@@ -25,6 +25,7 @@ export const query = graphql`
   }
 `;
 
+
 export interface LinkProps extends RebassLinkProps {
   id?: string;
   disabled?: boolean;
