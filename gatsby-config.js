@@ -19,8 +19,8 @@ module.exports = {
     `gatsby-transformer-sharp`,
     `gatsby-plugin-remove-fingerprints`,
     `gatsby-plugin-sharp`,
+    `gatsby-plugin-netlify`,
     `gatsby-transformer-sharp`,
-    `gatsby-plugin-gatsby-cloud`,
     {
       resolve: `gatsby-source-contentful`,
       options: {
