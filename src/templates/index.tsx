@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { graphql } from 'gatsby';
 import Layout from '../ui-components/layout';
-import { Heading, Text, Box } from 'rebass';
+import { Heading, Text, Button } from 'rebass';
 import ImageGallery from '../components/gallery/galleryComponent';
 import MainContainer from '../ui-components/container/container';
 import ImageVideoSection from '../components/video/video';
@@ -81,9 +81,12 @@ export default class Page extends React.Component<PageProps, {}> {
         <main>
           <MainContainer>
             <Text as='h1' css={{ fontSize: '2.6em', fontFamily: 'sans-serif', fontWeight: 'bold', width: '100%'}} >{heading}</Text>
-            <Text width='100%'>{subheading}</Text>
+            <Text width='50%'>{subheading}</Text>
           </MainContainer>
           <ImageGallery data={imageGallery} />
+          <MainContainer>
+            <Button as='a' m='30px 0' href='/baeo' color='white' bg='black' css={{ borderRadius: '0', fontFamily: 'sans-serif', fontSize: '2em'}}>If you've made it this far, click here</Button>
+          </MainContainer>
         </main>
       </Layout>
     );
