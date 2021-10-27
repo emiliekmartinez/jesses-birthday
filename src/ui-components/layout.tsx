@@ -14,7 +14,7 @@ import seoShare from '../assets/images/jesse-emilie.jpg';
 import favicon from '../assets/logos/favicon.png';
 
 const Layout = ({ children }: any) => {
-  const title = 'Happy 30th birtheday Jesse!';
+  const title = 'Happy 30th birthday Jesse!';
   const metaDescription = "You haven't hit your peak yet – we promise";
 
   return (
@@ -35,12 +35,20 @@ const Layout = ({ children }: any) => {
             content: metaDescription,
           },
           {
+            property: `og:image`,
+            content: seoShare
+          },
+          {
             property: `og:type`,
             content: `website`,
           },
           {
             name: `twitter:card`,
             content: `summary`,
+          },
+          {
+            name: `twitter:image`,
+            content: seoShare,
           },
           {
             name: `twitter:creator`,
@@ -57,6 +65,7 @@ const Layout = ({ children }: any) => {
         ]}
       >
       <link rel="icon" href={favicon} />
+      {/* <meta property="og:image" content={seoShare}></meta> */}
     </Helmet>
     {children}
     </ThemeProvider>
