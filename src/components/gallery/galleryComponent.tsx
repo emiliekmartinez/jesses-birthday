@@ -50,12 +50,17 @@ const ImageGallery: FC<Props & JSX.IntrinsicElements['div']> = ({
   ...rest
 }) => {
 
+  data.map(item => {
+    item.image == '' || undefined ? console.log(item) : '';
+  })
+
   const processedImages = data.map((item) => ({
     image: item.image,
     caption: item.text?.text,
-    attribution: item.attribution,
-    aspectRatio: item.image.gatsbyImageData.height / item.image.gatsbyImageData.width
+    attribution: item.attribution
   }));
+
+  data.map((item) => (console.log(item.image)));
 
   return (
     <Box>

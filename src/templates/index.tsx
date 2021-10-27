@@ -80,7 +80,7 @@ export default class Page extends React.Component<PageProps, {}> {
       <Layout>
         <main>
           <MainContainer>
-            <Heading width='100%'>{heading}</Heading>
+            <Text as='h1' css={{ fontSize: '2.6em', fontFamily: 'sans-serif', fontWeight: 'bold', width: '100%'}} >{heading}</Text>
             <Text width='100%'>{subheading}</Text>
           </MainContainer>
           <ImageGallery data={imageGallery} />

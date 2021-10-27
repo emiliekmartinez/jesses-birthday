@@ -21,7 +21,7 @@ const MainContainer = ({
 
   return (
     <Flex
-      maxWidth={fullwidth ? '100%' : '1000px'}
+      maxWidth={fullwidth ? '100%' : '1400px'}
       width="100%"
       flexWrap="wrap"
       mx={[0, 'auto']}
